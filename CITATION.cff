@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "CADENT: Context-Aware Distillation with Experience-gated Transfer"
+authors:
+  - family-names: Alinejad
+    given-names: Mahyar
+preferred-citation:
+  type: conference-paper
+  title: "CADENT: Gated Hybrid Distillation for Sample-Efficient Transfer in Reinforcement Learning"
+  authors:
+    - family-names: Alinejad
+      given-names: Mahyar
+    - family-names: Wang
+      given-names: Yue
+    - family-names: Atia
+      given-names: George
+  collection-title: "International Conference on Artificial Intelligence and Statistics (AISTATS)"
+  year: 2026

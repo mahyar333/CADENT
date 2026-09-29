@@ -1,0 +1,45 @@
+# NOTE: learning hyperparameters below are generic placeholders that run end-to-end
+# but are NOT the tuned values behind the reported results. Tuned configurations
+# are available on request.
+env: blind_craftsman
+sparse_rewards: true        # only task completion is rewarded (see README)
+episodes: 1000
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+teacher:
+  episodes: 300
+  alpha: 0.5   # placeholder
+  gamma: 0.9   # placeholder
+  epsilon_start: 1.0   # placeholder
+  epsilon_min: 0.05   # placeholder
+  epsilon_decay: 0.99   # placeholder
+  temperature: 1.0   # placeholder
+
+q_learning:                  # shared by every method
+  alpha: 0.5   # placeholder
+  gamma: 0.9   # placeholder
+  epsilon_start: 1.0   # placeholder
+  epsilon_min: 0.05   # placeholder
+  epsilon_decay: 0.999   # placeholder
+
+methods:
+  ad:
+    rho: 0.99   # placeholder
+  pd:
+    beta: 0.2   # placeholder
+    temperature: 1.0   # placeholder
+    tau: 1.0   # placeholder
+  kickstarting:
+    beta: 0.2   # placeholder
+    temperature: 1.0   # placeholder
+    tau: 1.0   # placeholder
+    anneal_fraction: 0.5   # placeholder
+  cadent:
+    eta: 0.05   # placeholder
+    k: 5.0   # placeholder
+    theta: 0.5   # placeholder
+    lambda_ad: 0.1   # placeholder
+    lambda_pd: 0.3   # placeholder
+    tau: 1.0   # placeholder
+    strategic: target
+    rho: 0.99   # placeholder

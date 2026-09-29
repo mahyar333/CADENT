@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cadent"
+version = "1.0.0"
+description = "CADENT: gated hybrid distillation for sample-efficient transfer in reinforcement learning (AISTATS 2026)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mahyar Alinejad" }]
+keywords = ["reinforcement learning", "transfer learning", "policy distillation", "automaton distillation", "reward machines"]
+dependencies = ["numpy>=1.22", "scipy>=1.8", "matplotlib>=3.5", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["cadent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,22 @@
+# Tuned hyperparameters are kept private
+configs/private/
+
+# Experiment outputs and local notes
+/results/
+PLAN.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
